@@ -1,2 +1,2 @@
 # codingtask
-my first repository
+I had accomplished the coding task in both React and Angular frameworks
