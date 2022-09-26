@@ -1,0 +1,42 @@
+
+          <!-- Contact-us Form -->
+          <div class="flex items-center justify-center h-screen ">
+            <form [formGroup]="contactusForm" (ngSubmit)="contactus()">
+              <div class="pb-1 text-2xl text-center"><h1> Contact me</h1> </div>
+              <div class="pb-2 text-md text-center"><h2>We are always happy to find out
+                what's on your mind</h2></div>
+              <!-- Name --> 
+              <div class="container grid grid-cols-2 space-x-2 gap-1 pt-6">
+                <!-- First Name --> 
+                <div class="mb-3 flex flex-col">
+                  <label class="inline-block mb-2">Name</label>
+                  <app-input [control]="firstName" placeholder="First Name"></app-input>
+                </div>  
+                <!-- Last Name --> 
+                <div class="mb-3 pt-2">
+                  <label class="inline-block mb-2"></label>
+                  <app-input [control]="lastName" placeholder="Last Name"></app-input>
+                </div>
+              </div>
+              <!-- Email -->
+              <div class="mb-3">
+                <label class="inline-block mb-2">Email Address</label>
+                <app-input [control]="email" type="email" 
+                placeholder="Enter Email"></app-input>
+              </div>
+              <!-- Message -->
+              <div class="mb-3">
+                <label class="inline-block mb-2">Message Content</label>
+                <textarea formControlName="message" type="text"
+                  class="block w-full py-1.5 px-3 border border-gray-400 transition
+                  duration-500 focus:outline-none rounded bg-transparent focus:border-indigo-400"
+                  placeholder="Message" ></textarea>
+              </div>
+              <button type="submit"
+                class="block w-full bg-indigo-400 text-white py-1.5 px-3 rounded transition
+                  hover:bg-indigo-500 disabled:opacity-50 disabled:bg-indigo-400"
+                  [disabled]="contactusForm.invalid">
+                Send
+              </button>
+            </form>
+          </div>

@@ -1,0 +1,64 @@
+.input-container {
+    text-align: left; 
+    margin-top: 0.25em;
+    margin-bottom: 0.6em;
+    
+}
+
+input {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+   
+}
+
+p {
+    margin: 0;
+    margin-bottom: 0.25rem;
+    color: red;
+    font-size: 1rem;
+}
+#blank {
+    border: none;
+    background-color: white;
+    
+    
+}
+
+fieldset:disabled  {
+    border-color: white;
+    background-color: white;
+  }
+
+#email {
+    margin-top: 0.6em;
+    margin-left: 22px;
+    border-color:  black
+}
+
+#lastName {
+    border: 1px solid black
+}
+
+#message {
+    margin-top: 0.6em;
+    margin-left: 8px;
+}
+
+.mb-2 {
+    background-color : #0d6efd;
+    color : white
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 21;
+    padding: 5px;
+}  
+
+.flex-child:first-child {
+    margin-right: 30px;
+    border-spacing: 10px;
+} 
